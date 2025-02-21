@@ -22,7 +22,6 @@ xml_tree.SubElement(channel_element, 'itunes:author').text = yaml_data['author']
 xml_tree.SubElement(channel_element, 'description').text = yaml_data['description']
 xml_tree.SubElement(channel_element, 'itunes:image', {'href': link_prefix + yaml_data['image']})
 xml_tree.SubElement(channel_element, 'language').text = yaml_data['language']
-xml_tree.SubElement(channel_element, 'itunes:explicit').text = yaml_data['explicit']
 xml_tree.SubElement(channel_element, 'link').text = link_prefix
 
 # Create an 'itunes:category' subelement within the 'channel' element, and set its 'text' attribute to the value of the 'category' field from the YAML data
